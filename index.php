@@ -90,11 +90,7 @@ try {
 
 
     foreach ($powers as $power) {
-        $row = mysql_query("SELECT * FROM powers WHERE ability='$power'");
-        if (mysql_num_rows($row)==0)
-        {
-            $ex2->execute(array($power));
-        }
+        $ex2->execute(array($power));
         $power_id = $connection->lastInsertId();
         $ex3->execute(array($id_user, $power_id));
     }
