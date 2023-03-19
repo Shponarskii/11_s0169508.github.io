@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="col-12 mx-lg-auto mx-md-auto mx-sm-auto mx-xl-auto order-2 order-sm-3" id="bc">
+<div class="col-12 m order-2 order-sm-3" id="bc">
 
     <h1 id="c">Форма</h1>
 

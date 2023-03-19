@@ -95,8 +95,6 @@ try {
         $ex3->execute(array($id_user, $power_id));
     }
 
-    echo "Данные успешно сохранены";
-
 } 
 catch (PDOException $e) {
     print('Database error : ' . $e->getMessage());
