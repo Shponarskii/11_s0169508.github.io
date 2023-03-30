@@ -28,36 +28,13 @@ try {
         $errors = TRUE;
     }
 
-    if (empty($email)) {
-        print('Заполните почту.<br/>');
-        $errors = TRUE;
-    } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors = TRUE;
-        print('Почта заполнена некорректно.<br/>');
-    }
-
     if (empty($dob)){
         print('Выберите дату рождения.<br/>');
         $errors = TRUE;
     }
 
-    if (empty($gender)){
-        print('Выберите пол.<br/>');
-        $errors = TRUE;
-    }
-
-    if (empty($limbs)){
-        print('Выберите количество конечностей.<br/>');
-        $errors = TRUE;
-    }
-
     if (empty($powers)){
         print('Выберите ваши суперспособности.<br/>');
-        $errors = TRUE;
-    }
-
-    if (empty($bio)) {
-        print('Заполните биографию.<br/>');
         $errors = TRUE;
     }
 
