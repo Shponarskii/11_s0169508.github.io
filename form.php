@@ -38,13 +38,13 @@
                 <label class="form-check-label">
                     Мужской
                 </label>
-                <input type="radio" class="form-check-input" name="radio-1" value="m">
+                <input type="radio" class="form-check-input" checked="checked" name="sx" value="m">
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
                     Женский
                 </label>
-                <input type="radio" class="form-check-input" name="radio-1" value="f">
+                <input type="radio" class="form-check-input" name="sx" value="f">
             </div>
         </div>
 
@@ -54,28 +54,28 @@
                 <label class="form-check-label">
                     1
                 </label>
-                <input type="radio" class="form-check-input" name="radio-2" value="1">
+                <input type="radio" class="form-check-input" name="limb" value="1">
             </div>
 
             <div class="form-check-inline">
                 <label class="form-check-label">
                     2
                 </label>
-                <input type="radio" class="form-check-input" name="radio-2" value="2">
+                <input type="radio" class="form-check-input" name="limb" value="2">
             </div>
 
             <div class="form-check-inline">
                 <label class="form-check-label">
                     3
                 </label>
-                <input type="radio" class="form-check-input" name="radio-2" value="3">
+                <input type="radio" class="form-check-input" name="limb" value="3">
             </div>
 
             <div class="form-check-inline">
                 <label class="form-check-label">
                     4
                 </label>
-                <input type="radio" class="form-check-input" name="radio-2" value="4">
+                <input type="radio" class="form-check-input" checked="checked" name="limb" value="4">
             </div>
         </div>
 
