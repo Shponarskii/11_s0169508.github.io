@@ -38,7 +38,7 @@ try {
     }
 
     if (empty($bio)){
-        print('Напишите биографию');
+        print('Напишите биографию.<br/>');
         $errors = TRUE;
     }
 
