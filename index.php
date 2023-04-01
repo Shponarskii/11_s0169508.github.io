@@ -37,13 +37,13 @@ try {
         $errors = TRUE;
     }
 
-    if (empty($bio)){
-        print('Напишите биографию.<br/>');
+    if (empty($_POST['powers'])){
+        print('Выберите ваши суперспособности.<br/>');
         $errors = TRUE;
     }
 
-    if (empty($_POST['powers'])){
-        print('Выберите ваши суперспособности.<br/>');
+    if (empty($bio)){
+        print('Напишите биографию.<br/>');
         $errors = TRUE;
     }
 
