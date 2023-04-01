@@ -30,7 +30,7 @@
             <label for="inbirth" class="form-label">
                 Дата рождения:<br>
             </label><br>
-            <input type="date" name="dob" class="form-control" id="inbirth">
+            <input type="date" min="2000-01-01" max="2005-12-31" name="dob" class="form-control" id="inbirth">
         </div>
         <div class="col-md-6 col-sm-12">
             Пол:
