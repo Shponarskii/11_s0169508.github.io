@@ -30,7 +30,7 @@
             <label for="inbirth" class="form-label">
                 Дата рождения:<br>
             </label><br>
-            <input type="date" name="dob" class="form-control" id="inbirth" min="2000-01-01" max="2005-12-31">
+            <input type="date" name="dob" class="form-control" id="inbirth">
         </div>
         <div class="col-md-6 col-sm-12">
             Пол:
@@ -38,13 +38,13 @@
                 <label class="form-check-label">
                     Мужской
                 </label>
-                <input type="radio" class="form-check-input" checked="checked" name="sx" value="m">
+                <input type="radio" class="form-check-input" checked="checked" name="radio-1" value="m">
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
                     Женский
                 </label>
-                <input type="radio" class="form-check-input" name="sx" value="f">
+                <input type="radio" class="form-check-input" name="radio-1" value="f">
             </div>
         </div>
 
@@ -54,28 +54,28 @@
                 <label class="form-check-label">
                     1
                 </label>
-                <input type="radio" class="form-check-input" name="limb" value="1">
+                <input type="radio" class="form-check-input" name="radio-2" value="1">
             </div>
 
             <div class="form-check-inline">
                 <label class="form-check-label">
                     2
                 </label>
-                <input type="radio" class="form-check-input" name="limb" value="2">
+                <input type="radio" class="form-check-input" name="radio-2" value="2">
             </div>
 
             <div class="form-check-inline">
                 <label class="form-check-label">
                     3
                 </label>
-                <input type="radio" class="form-check-input" name="limb" value="3">
+                <input type="radio" class="form-check-input" name="radio-2" value="3">
             </div>
 
             <div class="form-check-inline">
                 <label class="form-check-label">
                     4
                 </label>
-                <input type="radio" class="form-check-input" checked="checked" name="limb" value="4">
+                <input type="radio" class="form-check-input" checked="checked" name="radio-2" value="4">
             </div>
         </div>
 
