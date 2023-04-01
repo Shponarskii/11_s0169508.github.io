@@ -14,6 +14,8 @@ try {
 
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $gender = $_POST['radio-1'];
+    $limbs = $_POST['radio-2'];
     $dob = $_POST['dob'];
     $bio = $_POST['life'];
 
@@ -75,13 +77,13 @@ try {
     foreach ($powers as $power){
         switch ($power) {
             case "immortal":
-                $req2->execute(array($id_user, 1));
+                $ex3->execute(array($id_user, 1));
                 break;
             case "through":
-                $req2->execute(array($id_user, 2));
+                $ex3->execute(array($id_user, 2));
                 break;
             case "levitate":
-                $req2->execute(array($id_user, 3));
+                $ex3->execute(array($id_user, 3));
                 break;
         }
     }
