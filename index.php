@@ -70,22 +70,14 @@ try {
     $ex1->execute(array($name, $email, $dob, $gender, $limbs, $bio, $contract));
     $id_user = $connection->lastInsertId();
 
-    $query3 = "INSERT INTO form_power (form_id, power_id) VALUES (?, ?)";
+    $query3 = "INSERT INTO form_power (form_id, power_id) VALUES (:form_id, (SELECT id FROM powers1 WHERE ability=:power))";
     $ex3 =  $connection->prepare($query3);
 
 
     foreach ($powers as $power){
-        switch ($power) {
-            case "immortal":
-                $ex3->execute(array($id_user, 1));
-                break;
-            case "through":
-                $ex3->execute(array($id_user, 2));
-                break;
-            case "levitate":
-                $ex3->execute(array($id_user, 3));
-                break;
-        }
+        $ex3->bindParam(':form_id', $id_user);
+        $ex3->bindParam(':power', $power);
+        $ex3->execute();
     }
 
 } 
